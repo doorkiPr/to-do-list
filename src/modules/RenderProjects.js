@@ -33,6 +33,8 @@ function renderProjects(arrayOfProjects) {
         deleteProject.classList.toggle("deleteProjectBtn");
         deleteProject.textContent = "delete";
 
+        deleteProject.addEventListener("click",deleteElement(arrayOfProjects,project.uid));
+
         projectButtonWrapper.appendChild(editProjectTitle);
         projectButtonWrapper.appendChild(deleteProject);
 
