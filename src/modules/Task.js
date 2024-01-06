@@ -1,3 +1,5 @@
+import format  from "date-fns";
+
 function task(title, desc, date, status) {
     status = false;
 
@@ -17,6 +19,14 @@ function task(title, desc, date, status) {
         desc = newDesc;
     };
 
+    const getDate = () => {
+        return date
+    };
+
+    const setDate = (newDate) => {
+        date = format(newDate, "MM/dd/yyyy");
+    };
+
     const getStatus = () => {
         return status
     };
@@ -25,7 +35,7 @@ function task(title, desc, date, status) {
         status = newStatus;
     };
 
-    return { getTitle, setTitle, getDesc, setDesc, getStatus, setStatus }
+    return { getTitle, setTitle, getDesc, setDesc, getDate, setDate, getStatus, setStatus }
 }
 
 export default task;
