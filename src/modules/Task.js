@@ -1,4 +1,4 @@
-import format  from "date-fns";
+import { format } from "date-fns";
 
 function task(title, desc, date, status) {
     status = false;
