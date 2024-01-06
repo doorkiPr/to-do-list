@@ -22,6 +22,11 @@ function renderProjects(arrayOfProjects) {
         editProjectTitle.classList.toggle("editProjectBtn");
         editProjectTitle.textContent = "edit";
 
+        editProjectTitle.addEventListener("click",()=>{
+            //logic that pops modal with form and submit and exit button
+        });
+
+
         const deleteProject = document.createElement("button");
         deleteProject.classList.toggle("deleteProjectBtn");
         deleteProject.textContent = "delete";
