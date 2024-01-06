@@ -1,7 +1,10 @@
 import { format } from "date-fns";
+import { uid } from "uid";
 
 function Task(title, desc, date, status) {
     status = false;
+    
+    const id = uid();
 
     const getTitle = () => {
         return title
@@ -34,8 +37,12 @@ function Task(title, desc, date, status) {
     const setStatus = (newStatus) => {
         status = newStatus;
     };
+    
+    const getId =()=>{
+        return id
+    }
 
-    return { getTitle, setTitle, getDesc, setDesc, getDate, setDate, getStatus, setStatus }
+    return { getTitle, setTitle, getDesc, setDesc, getDate, setDate, getStatus, setStatus,getId }
 }
 
 export default Task;
