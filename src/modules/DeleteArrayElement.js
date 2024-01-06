@@ -2,7 +2,7 @@ const deleteElement = (array, id) => {
 
     array.forEach((element, i) => {
 
-        if (element.id === id) {
+        if (element.getId() === id) {
             array.splice(i, 1)
         }
 
