@@ -1,7 +1,9 @@
 import deleteElement from "./DeleteArrayElement";
+import { uid } from "uid";
 
 function Project(title) {
     const tasksArray = [];
+    const id = uid();
 
     const getTitle = () => {
         return title
@@ -22,8 +24,11 @@ function Project(title) {
     const deleteTask = (taskId) => {
         deleteElement(tasksArray, taskId)
     };
+    const getId = () => {
+        return id
+    }
 
-    return { getTitle, setTitle, getTasksArray, addTask, deleteTask }
+    return { getTitle, setTitle, getTasksArray, addTask, deleteTask, getId }
 }
 
 export default Project;
