@@ -1,6 +1,6 @@
 import { format } from "date-fns";
 
-function task(title, desc, date, status) {
+function Task(title, desc, date, status) {
     status = false;
 
     const getTitle = () => {
@@ -38,4 +38,4 @@ function task(title, desc, date, status) {
     return { getTitle, setTitle, getDesc, setDesc, getDate, setDate, getStatus, setStatus }
 }
 
-export default task;
+export default Task;
