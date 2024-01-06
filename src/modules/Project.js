@@ -19,8 +19,8 @@ function Project(title) {
         tasksArray.push(task);
     };
 
-    const deleteTask = (task) => {
-        deleteElement(tasksArray, task)
+    const deleteTask = (taskId) => {
+        deleteElement(tasksArray, taskId)
     };
 
     return { getTitle, setTitle, getTasksArray, addTask, deleteTask }
