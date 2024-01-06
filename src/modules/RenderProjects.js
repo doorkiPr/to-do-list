@@ -46,3 +46,5 @@ function renderProjects(arrayOfProjects) {
 
     });
 }
+
+export default renderProjects
