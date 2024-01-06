@@ -3,7 +3,7 @@ import { uid } from "uid";
 
 function Task(title, desc, date, status) {
     status = false;
-    
+
     const id = uid();
 
     const getTitle = () => {
@@ -34,15 +34,15 @@ function Task(title, desc, date, status) {
         return status
     };
 
-    const setStatus = (newStatus) => {
-        status = newStatus;
+    const toggleStatus = () => {
+        status ? status = false : status = true;
     };
-    
-    const getId =()=>{
+
+    const getId = () => {
         return id
     }
 
-    return { getTitle, setTitle, getDesc, setDesc, getDate, setDate, getStatus, setStatus,getId }
+    return { getTitle, setTitle, getDesc, setDesc, getDate, setDate, getStatus, toggleStatus, getId }
 }
 
 export default Task;
