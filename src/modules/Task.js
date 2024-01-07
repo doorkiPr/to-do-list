@@ -1,8 +1,8 @@
 import { format } from "date-fns";
 import { uid } from "uid";
 
-function Task(title, desc, date, status) {
-    status = false;
+function Task(title, desc, date) {
+    const status = false;
 
     const id = uid();
 
