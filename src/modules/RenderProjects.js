@@ -4,7 +4,7 @@ function renderProjects(arrayOfProjects) {
     const projectsWrapper = document.querySelector(".projectsWrapper");
 
     arrayOfProjects.forEach(project => {
-
+        console.log(project)
         const projectElement = document.createElement("div");
         projectElement.classList.toggle("project");
         projectElement.setAttribute("id", project.getId());
@@ -33,7 +33,9 @@ function renderProjects(arrayOfProjects) {
         deleteProject.classList.toggle("deleteProjectBtn");
         deleteProject.textContent = "delete";
 
-        deleteProject.addEventListener("click",deleteElement(arrayOfProjects,project.getId()));
+        deleteProject.addEventListener("click",()=>{
+            deleteElement(arrayOfProjects,project.getId());
+        });
 
         projectButtonWrapper.appendChild(editProjectTitle);
         projectButtonWrapper.appendChild(deleteProject);
