@@ -35,6 +35,8 @@ function renderProjects(arrayOfProjects) {
 
         deleteProject.addEventListener("click",()=>{
             deleteElement(arrayOfProjects,project.getId());
+            projectsWrapper.innerHTML="";
+            renderProjects(arrayOfProjects);
         });
 
         projectButtonWrapper.appendChild(editProjectTitle);
