@@ -2,7 +2,7 @@ import { format } from "date-fns";
 import { uid } from "uid";
 
 function Task(title, desc, date) {
-    const status = false;
+    let status = false;
 
     const id = uid();
 
