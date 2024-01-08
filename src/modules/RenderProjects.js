@@ -4,7 +4,6 @@ function renderProjects(arrayOfProjects) {
     const projectsWrapper = document.querySelector(".projectsWrapper");
 
     arrayOfProjects.forEach(project => {
-        console.log(project)
         const projectElement = document.createElement("div");
         projectElement.classList.toggle("project");
         projectElement.setAttribute("id", project.getId());
@@ -24,7 +23,7 @@ function renderProjects(arrayOfProjects) {
         editProjectTitle.classList.toggle("editProjectBtn");
         editProjectTitle.textContent = "edit";
 
-        editProjectTitle.addEventListener("click",()=>{
+        editProjectTitle.addEventListener("click", () => {
             //logic that pops modal with form and submit and exit button
         });
 
@@ -33,9 +32,9 @@ function renderProjects(arrayOfProjects) {
         deleteProject.classList.toggle("deleteProjectBtn");
         deleteProject.textContent = "delete";
 
-        deleteProject.addEventListener("click",()=>{
-            deleteElement(arrayOfProjects,project.getId());
-            projectsWrapper.innerHTML="";
+        deleteProject.addEventListener("click", () => {
+            deleteElement(arrayOfProjects, project.getId());
+            projectsWrapper.innerHTML = "";
             renderProjects(arrayOfProjects);
         });
 
