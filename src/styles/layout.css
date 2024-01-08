@@ -13,10 +13,20 @@ body{
     border-bottom: #2abd67 2px solid;
     box-shadow: 0 4px 2px -2px #1c8146 ;
 }
-.sidebar{
-    grid-area: 2 / 1 / 3 / 2
 
-}
 .footer{
     grid-area: 3 / 1 / 4 / 3;
+    background-color: #f2f3f5;
+}
+.main{
+    grid-area: 2 / 1 / 2 / 3; 
+    background-color: #ececec;
+    display: flex;
+}
+.mainWrapper{
+    width: 80%;
+}
+.sidebar{
+    background-color: #fefcfe;
+    width: 20%;
 }
