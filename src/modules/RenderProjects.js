@@ -21,7 +21,7 @@ function renderProjects(arrayOfProjects) {
 
 
         const editProjectTitle = document.createElement("button");
-        editProjectTitle.classList.toggle("editProjectBtn");
+        editProjectTitle.setAttribute("id","editProjectBtn");    
         editProjectTitle.textContent = "edit";
 
         editProjectTitle.addEventListener("click", () => {
@@ -30,7 +30,7 @@ function renderProjects(arrayOfProjects) {
 
 
         const deleteProject = document.createElement("button");
-        deleteProject.classList.toggle("deleteProjectBtn");
+        deleteProject.setAttribute("id","deleteProjectBtn");
         deleteProject.textContent = "delete";
 
         deleteProject.addEventListener("click", () => {
