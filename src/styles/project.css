@@ -1,0 +1,21 @@
+.project{
+    display: flex;
+    font-weight: 900;
+}
+.projectButtonWrapper{
+    margin-left: auto;
+}
+.projectButtonWrapper button{
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+}
+.projectButtonWrapper button:hover{
+    cursor: pointer;
+}
+#deleteProjectBtn:hover{
+    color: red;
+}
+#editProjectBtn:hover{
+    color:#2abd67;
+}
