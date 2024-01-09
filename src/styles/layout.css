@@ -12,8 +12,12 @@ body{
     background-color: #f2f3f5;
     border-bottom: #2abd67 2px solid;
     box-shadow: 0 4px 2px -2px #1c8146 ;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    font-size: 2.5rem;
+    font-weight: 900;
 }
-
 .footer{
     grid-area: 3 / 1 / 4 / 3;
     background-color: #f2f3f5;
