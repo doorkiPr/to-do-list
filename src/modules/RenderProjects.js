@@ -1,4 +1,5 @@
 import deleteElement from "./DeleteArrayElement";
+import css from "../styles/project.css";
 
 function renderProjects(arrayOfProjects) {
     const projectsWrapper = document.querySelector(".projectsWrapper");
