@@ -3,6 +3,7 @@ import css from "../styles/project.css";
 
 function renderProjects(arrayOfProjects) {
     const projectsWrapper = document.querySelector(".projectsWrapper");
+    projectsWrapper.innerHTML = "";
 
     arrayOfProjects.forEach(project => {
         const projectElement = document.createElement("div");
@@ -53,7 +54,6 @@ function renderProjects(arrayOfProjects) {
 
         projectForm.addEventListener("submit",()=>{
             project.setTitle(projectInput.value);
-            projectsWrapper.innerHTML = "";
             renderProjects(arrayOfProjects);
         })
 
@@ -85,7 +85,6 @@ function renderProjects(arrayOfProjects) {
 
         deleteProject.addEventListener("click", () => {
             deleteElement(arrayOfProjects, project.getId());
-            projectsWrapper.innerHTML = "";
             renderProjects(arrayOfProjects);
         });
 
