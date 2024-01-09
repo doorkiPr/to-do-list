@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
 body{
     margin:0;
+    font-size: 16x;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 #content{
     display: grid;
