@@ -52,14 +52,10 @@ function renderProjects(arrayOfProjects) {
 
 
         projectForm.addEventListener("submit",()=>{
-            project.setTitle(projectInput.value);
-            projectsWrapper.innerHTML = "";
-            renderProjects(arrayOfProjects);
+
         })
 
-        projectCancelBtn.addEventListener("click",(e)=>{
-            e.preventDefault();
-            projectDialog.close();
+        projectCancelBtn.addEventListener("click",()=>{
         })
 
         projectForm.appendChild(projectLabel);
@@ -76,7 +72,6 @@ function renderProjects(arrayOfProjects) {
 
         editProjectTitle.addEventListener("click", () => {
             //logic that pops modal with form and submit and exit button
-            projectDialog.showModal()
         });
 
 
