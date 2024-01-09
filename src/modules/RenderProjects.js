@@ -57,7 +57,7 @@ function renderProjects(arrayOfProjects) {
             renderProjects(arrayOfProjects);
         })
 
-        projectCancelBtn.addEventListener("click",()=>{
+        projectCancelBtn.addEventListener("click",(e)=>{
             e.preventDefault();
             projectDialog.close();
         })
