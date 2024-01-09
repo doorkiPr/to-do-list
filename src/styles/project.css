@@ -1,6 +1,18 @@
+.projectsWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 .project{
     display: flex;
     font-weight: 900;
+}
+.projectTitle{
+    font-size: 1.5rem;
+}
+.projectTitle:hover{
+    cursor: pointer;
+    color:#2abd67;
 }
 .projectButtonWrapper{
     margin-left: auto;
