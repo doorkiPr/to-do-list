@@ -54,11 +54,13 @@ function renderProjects(arrayOfProjects) {
 
         projectForm.addEventListener("submit",()=>{
             project.setTitle(projectInput.value);
+            projectInput.value="";
             renderProjects(arrayOfProjects);
         })
 
         projectCancelBtn.addEventListener("click",(e)=>{
             e.preventDefault();
+            projectInput.value="";
             projectDialog.close();
         })
 
