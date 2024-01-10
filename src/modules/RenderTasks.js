@@ -86,7 +86,7 @@ function renderTasks(arrayOfTasks) {
         taskForm.addEventListener("submit", () => {
             task.setTitle(taskTitleInput.value);
             task.setDesc(taskDescInput.value);
-            task.setDate(taskDateInput.value);
+            task.setDate(Date(taskDateInput.value));
             taskTitleInput.value = "";
             taskDescInput.value = "";
             taskDateInput.value = "";
@@ -139,7 +139,7 @@ function renderTasks(arrayOfTasks) {
         taskElement.appendChild(taskDate);
         taskElement.appendChild(taskBtnWrapper);
         taskElement.appendChild(taskDialog);
-        
+
         taskList.appendChild(taskElement);
 
     });
