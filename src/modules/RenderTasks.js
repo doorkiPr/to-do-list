@@ -1,7 +1,7 @@
 import deleteElement from "./DeleteArrayElement";
 
 function renderTasks(arrayOfTasks) {
-    const taskList = document.querySelector("taskList");
+    const taskList = document.querySelector(".taskList");
     taskList.innerHTML = "";
 
     arrayOfTasks.forEach(task => {
@@ -144,3 +144,4 @@ function renderTasks(arrayOfTasks) {
     });
 
 }
+export default renderTasks
