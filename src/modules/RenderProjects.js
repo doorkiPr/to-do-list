@@ -1,5 +1,6 @@
 import deleteElement from "./DeleteArrayElement";
 import css from "../styles/project.css";
+import renderTasks from "./RenderTasks";
 
 function renderProjects(arrayOfProjects) {
     const projectsWrapper = document.querySelector(".projectsWrapper");
@@ -27,7 +28,7 @@ function renderProjects(arrayOfProjects) {
         const deleteProject = document.createElement("button");
         deleteProject.setAttribute("id", "deleteProjectBtn");
         deleteProject.textContent = "delete";  
-              
+
         const projectDialog = document.createElement("dialog");
         const projectForm = document.createElement("form");
         const projectLabel = document.createElement("label");
@@ -92,6 +93,10 @@ function renderProjects(arrayOfProjects) {
             deleteElement(arrayOfProjects, project.getId());
             renderProjects(arrayOfProjects);
         });
+
+        projectTitle.addEventListener("click",()=>{
+            renderTasks(project.getTasksArray())
+        })
 
         projectButtonWrapper.appendChild(editProjectTitle);
         projectButtonWrapper.appendChild(deleteProject);
