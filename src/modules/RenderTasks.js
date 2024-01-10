@@ -73,7 +73,7 @@ function renderTasks(arrayOfTasks) {
         taskDescInput.placeholder = "Description ..."
         taskDescInput.type = "text";
         taskDescInput.required = true;
-        taskDescInput.maxLength = 15;
+        taskDescInput.maxLength = 50;
 
         taskDateLabel.htmlFor = "newtaskDate";
         taskDateInput.name = "newtaskDate";
