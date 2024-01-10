@@ -73,15 +73,11 @@ function renderTasks(arrayOfTasks) {
         taskTitleInput.required = true;
         taskTitleInput.maxLength = 15;
 
-
         taskTitleLabel.htmlFor = "newtaskDate";
         taskTitleInput.name = "newtaskDate";
         taskTitleInput.setAttribute("id", "newtaskDate");
         taskTitleInput.type = "date";
         taskTitleInput.required = true;
-
-
-
 
         taskSubmitBtn.textContent = "Confirm";
         taskCancelBtn.textContent = "Cancel";
