@@ -20,7 +20,14 @@ function renderProjects(arrayOfProjects) {
         const projectButtonWrapper = document.createElement("div");
         projectButtonWrapper.classList.toggle("projectButtonWrapper");
 
+        const editProjectTitle = document.createElement("button");
+        editProjectTitle.setAttribute("id", "editProjectBtn");
+        editProjectTitle.textContent = "edit";
 
+        const deleteProject = document.createElement("button");
+        deleteProject.setAttribute("id", "deleteProjectBtn");
+        deleteProject.textContent = "delete";  
+              
         const projectDialog = document.createElement("dialog");
         const projectForm = document.createElement("form");
         const projectLabel = document.createElement("label");
@@ -72,18 +79,14 @@ function renderProjects(arrayOfProjects) {
 
         projectDialog.appendChild(projectForm);
 
-        const editProjectTitle = document.createElement("button");
-        editProjectTitle.setAttribute("id", "editProjectBtn");
-        editProjectTitle.textContent = "edit";
+
 
         editProjectTitle.addEventListener("click", () => {
             projectDialog.showModal()
         });
 
 
-        const deleteProject = document.createElement("button");
-        deleteProject.setAttribute("id", "deleteProjectBtn");
-        deleteProject.textContent = "delete";
+
 
         deleteProject.addEventListener("click", () => {
             deleteElement(arrayOfProjects, project.getId());
