@@ -26,7 +26,7 @@ function renderTasks(arrayOfTasks) {
         taskStatus.type = "checkbox";
         taskTitle.textContent = task.getTitle();
         taskDesc.textContent = task.getDesc();
-        taskDate.textContent = tesk.getDate();
+        taskDate.textContent = task.getDate();
         editTask.textContent = "edit";
         deleteTask.textContent = "delete";
 
