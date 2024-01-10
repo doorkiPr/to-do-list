@@ -115,6 +115,7 @@ function renderTasks(arrayOfTasks) {
 
         editTask.addEventListener("click", () => {
             // logic that pops up the modal to input and submit and apply said inputs to the task
+            taskDialog.showModal();
         });
 
         deleteTask.addEventListener("click", () => {
