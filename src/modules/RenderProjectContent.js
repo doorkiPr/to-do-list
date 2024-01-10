@@ -1,6 +1,6 @@
 import Task from "./Task";
 
-function renderProjectContent(project) {
+function renderProjectContent(project,renderTasks) {
     const mainWrapper = document.querySelector(".mainWrapper");
     const mainHeader = document.querySelector(".mainHeader");
     const btnWrapper = document.querySelector(".addTaskWrapper");
@@ -72,7 +72,7 @@ function renderProjectContent(project) {
         taskTitleInput.value = "";
         taskDescInput.value = "";
         taskDateInput.value = "";
-        renderTasks(project.getTasksArray());
+        renderTasks(project.getTasksArray())
     });
 
     taskCancelBtn.addEventListener("click", (e) => {
