@@ -32,6 +32,8 @@ function renderTasks(arrayOfTasks) {
 
         taskStatus.addEventListener("click", () => {
             // logic that sets the status on the task   
+            task.toggleStatus();
+            renderTasks();
         });
 
         editTask.addEventListener("click", () => {
