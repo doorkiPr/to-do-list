@@ -91,14 +91,18 @@ function renderTasks(arrayOfTasks) {
             task.setTitle(taskTitleInput.value);
             task.setDesc(taskDescInput.value);
             task.setDate(taskDateInput.value);
-            taskTitleInput.value="";
-            taskDescInput.value="";
-            taskDateInput.value="";
+            taskTitleInput.value = "";
+            taskDescInput.value = "";
+            taskDateInput.value = "";
             renderTasks(arrayOfTasks);
         })
 
         taskCancelBtn.addEventListener("click", (e) => {
-
+            e.preventDefault();
+            taskTitleInput.value = "";
+            taskDescInput.value = "";
+            taskDateInput.value = "";
+            taskDialog.close();
         })
 
         taskForm.appendChild(taskTitleLabel);
