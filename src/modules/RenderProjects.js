@@ -27,7 +27,7 @@ function renderProjects(arrayOfProjects) {
 
         const deleteProject = document.createElement("button");
         deleteProject.setAttribute("id", "deleteProjectBtn");
-        deleteProject.textContent = "delete";  
+        deleteProject.textContent = "delete";
 
         const projectDialog = document.createElement("dialog");
         const projectForm = document.createElement("form");
@@ -44,31 +44,31 @@ function renderProjects(arrayOfProjects) {
         projectModalBtnWrapper.classList.toggle("projectModalBtnWrapper");
         projectSubmitBtn.classList.toggle("projectDialogSubmit");
         projectCancelBtn.classList.toggle("projectDialogCancel");
-        
-        projectSubmitBtn.type="submit";
+
+        projectSubmitBtn.type = "submit";
         projectForm.method = "dialog";
 
         projectLabel.htmlFor = "newProjectTitle";
         projectInput.name = "newProjectTitle";
         projectInput.setAttribute("id", "newProjectTitle");
-        projectInput.placeholder="Title ..."
+        projectInput.placeholder = "Title ..."
         projectInput.type = "text";
         projectInput.required = true;
         projectInput.maxLength = 15;
 
-        projectSubmitBtn.textContent="Confirm";
-        projectCancelBtn.textContent="Cancel";
+        projectSubmitBtn.textContent = "Confirm";
+        projectCancelBtn.textContent = "Cancel";
 
 
-        projectForm.addEventListener("submit",()=>{
+        projectForm.addEventListener("submit", () => {
             project.setTitle(projectInput.value);
-            projectInput.value="";
+            projectInput.value = "";
             renderProjects(arrayOfProjects);
         })
 
-        projectCancelBtn.addEventListener("click",(e)=>{
+        projectCancelBtn.addEventListener("click", (e) => {
             e.preventDefault();
-            projectInput.value="";
+            projectInput.value = "";
             projectDialog.close();
         })
 
@@ -80,22 +80,17 @@ function renderProjects(arrayOfProjects) {
 
         projectDialog.appendChild(projectForm);
 
-
-
         editProjectTitle.addEventListener("click", () => {
-            projectDialog.showModal()
+            projectDialog.showModal();
         });
-
-
-
 
         deleteProject.addEventListener("click", () => {
             deleteElement(arrayOfProjects, project.getId());
             renderProjects(arrayOfProjects);
         });
 
-        projectTitle.addEventListener("click",()=>{
-            renderTasks(project.getTasksArray())
+        projectTitle.addEventListener("click", () => {
+            renderTasks(project.getTasksArray());
         })
 
         projectButtonWrapper.appendChild(editProjectTitle);
