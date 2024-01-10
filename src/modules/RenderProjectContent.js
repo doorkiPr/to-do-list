@@ -3,7 +3,9 @@ import Task from "./Task";
 function renderProjectContent(project) {
     const mainWrapper = document.querySelector(".mainWrapper");
     const mainHeader = document.querySelector(".mainHeader");
-
+    const btnWrapper = document.querySelector(".addTaskWrapper");
+    btnWrapper.innerHTML="";
+    
     mainHeader.textContent = project.getTitle();
 
     const addTaskBtn = document.createElement("button");
@@ -85,7 +87,9 @@ function renderProjectContent(project) {
         taskDialog.showModal();
     });
 
-    mainWrapper.appendChild(addTaskBtn);
+    btnWrapper.appendChild(addTaskBtn);
+    
+    mainWrapper.appendChild(btnWrapper);
     mainWrapper.appendChild(taskDialog);
 }
 export default renderProjectContent
