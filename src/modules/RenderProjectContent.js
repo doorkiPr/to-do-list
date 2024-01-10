@@ -88,3 +88,4 @@ function renderProjectContent(project) {
     mainWrapper.appendChild(addTaskBtn);
     mainWrapper.appendChild(taskDialog);
 }
+export default renderProjectContent
