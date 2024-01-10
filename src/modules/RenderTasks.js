@@ -1,5 +1,5 @@
 import deleteElement from "./DeleteArrayElement";
-
+import css from "../styles/task.css"
 function renderTasks(arrayOfTasks) {
     const taskList = document.querySelector(".taskList");
     taskList.innerHTML = "";
