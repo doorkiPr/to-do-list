@@ -4,4 +4,9 @@ function renderProjectContent(project) {
 
     mainHeader.textContent = project.getTitle();
 
+    const addTaskBtn = document.createElement("button");
+
+    addTaskBtn.classList.toggle("addTaskBtn");
+    addTaskBtn.textContent = "+ ADD task";
+
 }
