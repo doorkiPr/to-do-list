@@ -27,7 +27,7 @@ function Task(title, desc, date) {
     };
 
     const setDate = (newDate) => {
-        date = format(newDate, "MM/dd/yyyy");
+        date = format(newDate, "MMM/dd/yyyy");
     };
 
     const getStatus = () => {
