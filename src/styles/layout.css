@@ -10,7 +10,7 @@ body{
 #content{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 0.75fr 6fr 0.25fr;
+    grid-template-rows: 0.5fr 6fr 0.25fr;
     height: 100vh;
 }
 .header{
@@ -20,7 +20,7 @@ body{
     box-shadow: 0 4px 2px -2px #1c8146 ;
     display: flex;
     justify-content: space-between;
-    padding: 25px;
+    padding: 15px;
     font-size: 2.5rem;
     font-weight: 900;
 }
