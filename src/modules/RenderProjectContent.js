@@ -5,7 +5,7 @@ function renderProjectContent(project) {
     const mainHeader = document.querySelector(".mainHeader");
     const btnWrapper = document.querySelector(".addTaskWrapper");
     btnWrapper.innerHTML="";
-    
+
     mainHeader.textContent = project.getTitle();
 
     const addTaskBtn = document.createElement("button");
@@ -83,10 +83,21 @@ function renderProjectContent(project) {
         taskDialog.close();
     });
 
+    taskForm.appendChild(taskTitleLabel);
+    taskForm.appendChild(taskTitleInput);
+    taskForm.appendChild(taskDescLabel);
+    taskForm.appendChild(taskDescInput);
+    taskForm.appendChild(taskDateLabel);
+    taskForm.appendChild(taskDateInput);
+    taskModalBtnWrapper.appendChild(taskSubmitBtn);
+    taskModalBtnWrapper.appendChild(taskCancelBtn);
+    taskForm.appendChild(taskModalBtnWrapper);
+
+    taskDialog.appendChild(taskForm);
+
     addTaskBtn.addEventListener("click",()=>{
         taskDialog.showModal();
     });
-
     btnWrapper.appendChild(addTaskBtn);
     
     mainWrapper.appendChild(btnWrapper);
