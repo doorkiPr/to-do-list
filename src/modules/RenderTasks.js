@@ -24,6 +24,7 @@ function renderTasks(arrayOfTasks) {
         deleteTask.classList.toggle("deleteTask");
 
         taskStatus.type = "checkbox";
+        taskStatus.name = "status";
         taskTitle.textContent = task.getTitle();
         taskDesc.textContent = task.getDesc();
         taskDate.textContent = task.getDate();
