@@ -88,7 +88,13 @@ function renderTasks(arrayOfTasks) {
 
 
         taskForm.addEventListener("submit", () => {
-
+            task.setTitle(taskTitleInput.value);
+            task.setDesc(taskDescInput.value);
+            task.setDate(taskDateInput.value);
+            taskTitleInput.value="";
+            taskDescInput.value="";
+            taskDateInput.value="";
+            renderTasks(arrayOfTasks);
         })
 
         taskCancelBtn.addEventListener("click", (e) => {
