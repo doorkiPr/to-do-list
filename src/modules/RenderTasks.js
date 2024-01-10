@@ -65,19 +65,19 @@ function renderTasks(arrayOfTasks) {
         taskTitleInput.required = true;
         taskTitleInput.maxLength = 15;
 
-        taskTitleLabel.htmlFor = "newtaskDesc";
-        taskTitleInput.name = "newtaskDesc";
-        taskTitleInput.setAttribute("id", "newtaskDesc");
-        taskTitleInput.placeholder = "Description ..."
-        taskTitleInput.type = "text";
-        taskTitleInput.required = true;
-        taskTitleInput.maxLength = 15;
+        taskDescLabel.htmlFor = "newtaskDesc";
+        taskDescInput.name = "newtaskDesc";
+        taskDescInput.setAttribute("id", "newtaskDesc");
+        taskDescInput.placeholder = "Description ..."
+        taskDescInput.type = "text";
+        taskDescInput.required = true;
+        taskDescInput.maxLength = 15;
 
-        taskTitleLabel.htmlFor = "newtaskDate";
-        taskTitleInput.name = "newtaskDate";
-        taskTitleInput.setAttribute("id", "newtaskDate");
-        taskTitleInput.type = "date";
-        taskTitleInput.required = true;
+        taskDateLabel.htmlFor = "newtaskDate";
+        taskDateInput.name = "newtaskDate";
+        taskDateInput.setAttribute("id", "newtaskDate");
+        taskDateInput.type = "date";
+        taskDateInput.required = true;
 
         taskSubmitBtn.textContent = "Confirm";
         taskCancelBtn.textContent = "Cancel";
