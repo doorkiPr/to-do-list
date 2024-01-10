@@ -38,13 +38,13 @@ function renderTasks(arrayOfTasks) {
 
         editTask.addEventListener("click", () => {
             // logic that pops up the modal to input and submit and apply said inputs to the task
-        })
+        });
 
         deleteTask.addEventListener("click", () => {
             // logic that deletes task
-            deleteElement(arrayOfTasks,task.getId());
+            deleteElement(arrayOfTasks, task.getId());
             renderTasks(arrayOfTasks);
-        })
+        });
 
         taskBtnWrapper.appendChild(editTask);
         taskBtnWrapper.appendChild(deleteTask);
