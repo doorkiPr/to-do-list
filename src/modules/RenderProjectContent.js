@@ -1,3 +1,5 @@
+import Task from "./Task";
+
 function renderProjectContent(project) {
     const mainWrapper = document.querySelector(".mainWrapper");
     const mainHeader = document.querySelector(".mainHeader");
@@ -63,6 +65,7 @@ function renderProjectContent(project) {
 
 
         taskForm.addEventListener("submit", () => {
+            const newTask = Task(taskTitleInput.value, taskDescInput.value, taskDateInput.value);
             taskTitleInput.value = "";
             taskDescInput.value = "";
             taskDateInput.value = "";
