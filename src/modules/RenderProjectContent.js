@@ -66,6 +66,7 @@ function renderProjectContent(project) {
 
         taskForm.addEventListener("submit", () => {
             const newTask = Task(taskTitleInput.value, taskDescInput.value, taskDateInput.value);
+            project.addTask(newTask);
             taskTitleInput.value = "";
             taskDescInput.value = "";
             taskDateInput.value = "";
