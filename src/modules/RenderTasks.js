@@ -1,3 +1,5 @@
+import deleteElement from "./DeleteArrayElement";
+
 function renderTasks(arrayOfTasks) {
     const taskList = document.querySelector("taskList");
     taskList.innerHTML = "";
@@ -38,6 +40,8 @@ function renderTasks(arrayOfTasks) {
 
         deleteTask.addEventListener("click", () => {
             // logic that deletes task
+            deleteElement(arrayOfTasks,task.getId());
+            renderTasks(arrayOfTasks);
         })
 
         taskBtnWrapper.appendChild(editTask);
