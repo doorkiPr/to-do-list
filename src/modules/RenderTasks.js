@@ -138,7 +138,8 @@ function renderTasks(arrayOfTasks) {
         taskElement.appendChild(taskDesc);
         taskElement.appendChild(taskDate);
         taskElement.appendChild(taskBtnWrapper);
-
+        taskElement.appendChild(taskDialog);
+        
         taskList.appendChild(taskElement);
 
     });
