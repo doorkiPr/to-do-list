@@ -81,6 +81,9 @@ function renderProjectContent(project) {
         taskDialog.close();
     });
 
+    addTaskBtn.addEventListener("click",()=>{
+        taskDialog.showModal();
+    });
 
     mainWrapper.appendChild(addTaskBtn);
     mainWrapper.appendChild(taskDialog);
