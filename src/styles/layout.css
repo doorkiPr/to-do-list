@@ -68,6 +68,9 @@ body{
     border-bottom: var(--textColor) 2px solid;
     padding-bottom: 10px;
 }
+.hidden{
+    display: none;
+}
 .home{
     display:  flex;
     flex-direction: column;
