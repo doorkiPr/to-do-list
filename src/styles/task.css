@@ -1,9 +1,21 @@
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .task {
     display: flex;
     align-items: center;
     border: 1px solid #374958;
     gap: 30px;
     font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.task:hover {
+    cursor: pointer;
+    filter: brightness(50%);
 }
 
 .taskBtnWrapper {
@@ -14,8 +26,9 @@ h4 {
     margin: 0;
 }
 
-p {
+.task p {
     margin: 0;
+    font-size: 1.2rem;
 }
 
 input[type=checkbox] {
@@ -48,4 +61,10 @@ input[type="checkbox"]:checked::before {
 input[type="checkbox"]:hover {
     color: black;
     cursor: pointer;
+}
+
+.taskBtnWrapper button {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
 }
