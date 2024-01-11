@@ -53,7 +53,7 @@ body{
     display: flex;
 }
 .mainWrapper{
-    width: 80%;
+    width: 100%;
 }
 .sidebar{
     background-color: var(--bgSideBarMain);
@@ -103,9 +103,6 @@ body{
     .sidebar{
         width: 100%;
         padding: 0;
-    }
-    .mainWrapper{
-        width: 100%;
     }
   }
   
