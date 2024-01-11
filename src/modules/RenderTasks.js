@@ -15,6 +15,7 @@ function renderTasks(arrayOfTasks) {
         const deleteTask = document.createElement("button");
 
         taskElement.classList.toggle("task");
+        task.getStatus() ? taskElement.classList.add("checked") : taskElement.classList.remove("checked");
         taskStatus.classList.toggle("taskStatus");
         taskTitle.classList.toggle("taskTitle");
         taskDesc.classList.toggle("taskDesc");
