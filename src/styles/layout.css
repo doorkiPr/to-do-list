@@ -93,3 +93,16 @@ body{
     color: var(--darkGreen);
     cursor: pointer;
 }
+@media screen and (max-width: 1024px) {
+    .main{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+        padding: 0;
+    }
+    .mainWrapper{
+        width: 100%;
+    }
+  }
+  

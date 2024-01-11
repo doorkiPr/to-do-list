@@ -8,3 +8,8 @@
     height: 80px;
     padding: 15px;
 }
+@media screen and (max-width: 1024px) {
+    .mainWrapper{
+        padding: 0;
+    }
+  }

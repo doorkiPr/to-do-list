@@ -82,3 +82,18 @@ input[type="checkbox"]:hover {
 .deleteTask:hover{
     color: var(--red);
 }
+@media screen and (max-width: 1024px) {
+    .task{
+        gap: 3px;
+        font-size: 1rem
+    }
+    .task p{
+        font-size: small;
+    }
+    ul{
+        padding: 0;
+    }
+    .taskBtnWrapper button {
+        font-size: 0.8rem;
+    }
+  }
