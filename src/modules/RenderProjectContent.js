@@ -1,5 +1,5 @@
 import Task from "./Task";
-
+import css from "../styles/projectContent.css"
 function renderProjectContent(project,renderTasks) {
     const mainWrapper = document.querySelector(".mainWrapper");
     const mainHeader = document.querySelector(".mainHeader");

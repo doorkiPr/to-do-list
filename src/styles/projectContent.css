@@ -1,0 +1,10 @@
+.mainWrapper{
+    padding: 30px;
+}
+.mainHeader{
+    background-color: var(--green);
+    color: whitesmoke;
+    font-size: 3rem;
+    height: 80px;
+    padding: 15px;
+}
