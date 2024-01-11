@@ -15,7 +15,10 @@
 
 .task:hover {
     cursor: pointer;
-    filter: brightness(50%);
+    background-color: whitesmoke;
+}
+.task, .checked{
+    text-decoration: line-through;
 }
 
 .taskBtnWrapper {
