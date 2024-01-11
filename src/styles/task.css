@@ -72,3 +72,13 @@ input[type="checkbox"]:hover {
     background: none;
     font-size: 1.2rem;
 }
+
+.editTask, .deleteTask{
+    cursor: pointer;
+}
+.editTask:hover{
+    color: var(--bgColor2);
+}
+.deleteTask:hover{
+    color: red;
+}
