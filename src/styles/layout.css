@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+:root{
+    --bgColor2: #ececec;
+    --bgHeaderFooter: #f2f3f5;
+    --bgSideBarMain: #fefcfe;
+    --bgColorPopUp: #f3f1f3;
+    --textColor: #374958;
+    --green: #2abd67;
+    --red: #d11a2a;
+}
 
 body{
     margin:0;
