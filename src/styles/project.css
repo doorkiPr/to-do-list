@@ -7,6 +7,9 @@
     display: flex;
     font-weight: 900;
 }
+.project:hover{
+    background-color: rgba(128, 128, 128, 0.267);
+}
 .projectTitle{
     font-size: 1.5rem;
 }
