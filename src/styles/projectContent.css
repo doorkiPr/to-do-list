@@ -8,6 +8,21 @@
     height: 80px;
     padding: 15px;
 }
+.addTaskWrapper{
+    margin-left: 40px;
+}
+.addTaskBtn{
+    border: var(--textColor) solid 1px;
+    border-radius: 5px;
+    background: none;
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+.addTaskBtn:hover{
+    background-color: var(--grayBackground);
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1024px) {
     .mainWrapper{
         padding: 0;
