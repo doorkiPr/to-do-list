@@ -7,7 +7,7 @@
 .task {
     display: flex;
     align-items: center;
-    border: 1px solid #374958;
+    border: 1px solid var(--textColor);
     gap: 30px;
     font-size: 1.5rem;
     border-radius: 5px;
@@ -42,7 +42,7 @@ input[type=checkbox] {
     align-content: center;
     justify-content: center;
     font-size: 2rem;
-    border: 2px solid #374958;
+    border: 2px solid var(--textColor);
     border-radius: 50%;
     margin-left: 10px
 }
@@ -54,7 +54,7 @@ input[type="checkbox"]::before {
     height: 20px;
     clip-path: polygon(28% 38%, 41% 53%, 75% 24%, 86% 38%, 40% 78%, 15% 50%);
     transform: scale(0);
-    background-color: #2abd67;
+    background-color: var(--green);
 }
 
 
@@ -77,8 +77,8 @@ input[type="checkbox"]:hover {
     cursor: pointer;
 }
 .editTask:hover{
-    color: var(--bgColor2);
+    color: var(--darkGreen);
 }
 .deleteTask:hover{
-    color: red;
+    color: var(--red);
 }

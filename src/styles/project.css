@@ -8,14 +8,14 @@
     font-weight: 900;
 }
 .project:hover{
-    background-color: rgba(128, 128, 128, 0.267);
+    background-color:var(--grayBackground);
 }
 .projectTitle{
     font-size: 1.5rem;
 }
 .projectTitle:hover{
     cursor: pointer;
-    color:#2abd67;
+    color:var(--darkGreen);
 }
 .projectButtonWrapper{
     margin-left: auto;
@@ -29,8 +29,8 @@
     cursor: pointer;
 }
 #deleteProjectBtn:hover{
-    color: red;
+    color: var(--red);
 }
 #editProjectBtn:hover{
-    color:#2abd67;
+    color:var(--darkGreen);
 }
