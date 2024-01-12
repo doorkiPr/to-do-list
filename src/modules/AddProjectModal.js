@@ -1,6 +1,8 @@
 import Project from "./Project";
 
 function renderAddProjectModal(arrayOfProjects) {
+    const main = document.querySelector(".main");
+
     const projectDialog = document.createElement("dialog");
     const projectForm = document.createElement("form");
     const projectLabel = document.createElement("label");
@@ -51,4 +53,6 @@ function renderAddProjectModal(arrayOfProjects) {
     projectForm.appendChild(projectModalBtnWrapper);
 
     projectDialog.appendChild(projectForm);
+
+    main.appendChild(projectDialog);
 }
