@@ -8,13 +8,13 @@ function loadIcons() {
     document.querySelector("#allTasks").appendChild(allTasksIcon);
 
     const thisWeekIcon = document.createElement("img");
-    todayIcons.src = week;
+    thisWeekIcon.src = week;
     document.querySelector("#nextDays").appendChild(thisWeekIcon);
 
     const favoriteIcon = document.createElement("img");
     favoriteIcon.src = star;
     
-    document.querySelector("#favorite").appendChild(allTasksIcon);
+    document.querySelector("#favorite").appendChild(favoriteIcon);
 
 }
 export default loadIcons
