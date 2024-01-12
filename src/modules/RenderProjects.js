@@ -1,6 +1,5 @@
 import deleteElement from "./DeleteArrayElement";
 import css from "../styles/project.css";
-import renderTasks from "./RenderTasks";
 import renderProjectContent from "./RenderProjectContent";
 
 function renderProjects(arrayOfProjects) {
@@ -91,8 +90,7 @@ function renderProjects(arrayOfProjects) {
         });
 
         projectTitle.addEventListener("click", () => {
-            renderTasks(project.getTasksArray());
-            renderProjectContent(project,renderTasks);
+            renderProjectContent(project);
         })
 
         projectButtonWrapper.appendChild(editProjectTitle);

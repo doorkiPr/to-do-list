@@ -1,9 +1,12 @@
 import Task from "./Task";
 import css from "../styles/projectContent.css"
-function renderProjectContent(project, renderTasks, isDefault) {
+import renderTasks from "./RenderTasks";
+function renderProjectContent(project,isDefault) {
+    renderTasks(project.getTasksArray());
+    
     const mainHeader = document.querySelector(".mainHeader");
     mainHeader.textContent = project.getTitle();
-    
+
     if (!isDefault) {
         const mainWrapper = document.querySelector(".mainWrapper");
         const btnWrapper = document.querySelector(".addTaskWrapper");
