@@ -1,4 +1,5 @@
 import Project from "./Project";
+import renderProjects from "./RenderProjects";
 
 function renderAddProjectModal(arrayOfProjects) {
     const main = document.querySelector(".main");
@@ -32,7 +33,6 @@ function renderAddProjectModal(arrayOfProjects) {
 
     projectSubmitBtn.textContent = "Confirm";
     projectCancelBtn.textContent = "Cancel";
-
 
     projectForm.addEventListener("submit", () => {
         arrayOfProjects.push(Project(projectInput.value))
