@@ -3,7 +3,7 @@ import css from "../styles/project.css";
 import renderTasks from "./RenderTasks";
 import renderProjectContent from "./RenderProjectContent";
 
-function renderProjects(arrayOfProjects) {
+function renderProjects(arrayOfProjects,isDefault) {
     const projectsWrapper = document.querySelector(".projectsWrapper");
     projectsWrapper.innerHTML = "";
 
@@ -64,7 +64,7 @@ function renderProjects(arrayOfProjects) {
         projectForm.addEventListener("submit", () => {
             project.setTitle(projectInput.value);
             projectInput.value = "";
-            renderProjects(arrayOfProjects);
+            renderProjects(arrayOfProjects,isDefault);
         })
 
         projectCancelBtn.addEventListener("click", (e) => {
@@ -87,12 +87,12 @@ function renderProjects(arrayOfProjects) {
 
         deleteProject.addEventListener("click", () => {
             deleteElement(arrayOfProjects, project.getId());
-            renderProjects(arrayOfProjects);
+            renderProjects(arrayOfProjects,isDefault);
         });
 
         projectTitle.addEventListener("click", () => {
             renderTasks(project.getTasksArray());
-            renderProjectContent(project,renderTasks);
+            renderProjectContent(project,renderTasks,isDefault);
         })
 
         projectButtonWrapper.appendChild(editProjectTitle);
