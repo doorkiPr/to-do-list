@@ -55,5 +55,6 @@ function renderAddProjectModal(arrayOfProjects) {
     projectDialog.appendChild(projectForm);
 
     main.appendChild(projectDialog);
-    projectDialog.showModal
+    projectDialog.showModal()
 }
+export default renderAddProjectModal
