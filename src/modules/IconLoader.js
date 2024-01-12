@@ -14,7 +14,7 @@ function loadIcons() {
     const favoriteIcon = document.createElement("img");
     favoriteIcon.src = star;
     
-    document.querySelector("#favorite").appendChild(favoriteIcon);
+    document.querySelector("#finished").appendChild(favoriteIcon);
 
 }
 export default loadIcons
