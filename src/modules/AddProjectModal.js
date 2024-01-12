@@ -55,4 +55,5 @@ function renderAddProjectModal(arrayOfProjects) {
     projectDialog.appendChild(projectForm);
 
     main.appendChild(projectDialog);
+    projectDialog.showModal
 }
