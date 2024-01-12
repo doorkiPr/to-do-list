@@ -17,3 +17,4 @@ function loadIcons() {
     document.querySelector("#favorite").appendChild(allTasksIcon);
 
 }
+export default loadIcons
