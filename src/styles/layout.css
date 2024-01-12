@@ -76,18 +76,18 @@ body{
     flex-direction: column;
     gap: 10px;
 }
-.homeProject{
+.defaultProject{
     font-weight: 800;
     font-size: 1.2rem;
     padding: 5px;
     display: flex;
     align-items: center;
 }
-.homeProject img{
+.defaultProject img{
     height: 35px;
     width: 35px;
 }
-.homeProject:hover{
+.defaultProject:hover{
     background-color: var(--grayBackground);
     cursor: pointer;
 }
