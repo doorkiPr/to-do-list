@@ -4,10 +4,12 @@
 .mainHeader{
     background-color: var(--green);
     color: whitesmoke;
-    font-size: 3rem;
-    font-weight: 800;
+    font-size: 2.2rem;
+    font-weight: 600;
     height: 80px;
     padding: 15px;
+    display: flex;
+    align-items: center;
 }
 .addTaskWrapper{
     margin-left: 40px;
