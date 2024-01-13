@@ -1,7 +1,7 @@
 # ToDo-List
  - Personal project made with SOLID and OOP principles in mind.
  - Used npm, webpack and  ES6 modules
- - Check out live preview here: https://khunhour.github.io/todo_list/
+ - Check out live preview here: https://doorkipr.github.io/to-do-list/
 # Functionality
  - add projects
  - rename projects
