@@ -41,6 +41,7 @@ const config = {
             template: './src/template.html',
             filename: 'index.html',
             title: 'to-do-list',
+            favicon: './src/media/favicon.png'
         })
     ]
 };
