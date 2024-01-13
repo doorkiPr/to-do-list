@@ -35,6 +35,9 @@ body{
     font-size: 2.5rem;
     font-weight: 900;
 }
+.logo span{
+    color: var(--green);
+}
 .material-symbols-outlined{
     font-size: inherit;
 }
