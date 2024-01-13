@@ -1,0 +1,32 @@
+dialog{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+form{
+    display: flex;
+    gap : 10px;
+    flex-direction: column;
+}
+form input{
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px black solid;
+    padding: 5px;
+}
+form :last-child{
+    align-self: center;
+    display: flex;
+    gap: 5px;
+}
+form button{
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+}
+form button:hover{
+    cursor: pointer;
+    color: var(--green);
+}
+form :last-child:last-child:hover{
+    color: var(--red);
+}

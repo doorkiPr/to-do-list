@@ -1,5 +1,6 @@
 import Project from "./Project";
 import renderProjects from "./RenderProjects";
+import css from "../styles/dialog.css";
 
 function renderAddProjectModal(arrayOfProjects) {
     const main = document.querySelector(".main");
