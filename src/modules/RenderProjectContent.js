@@ -1,17 +1,16 @@
 import Task from "./Task";
 import css from "../styles/projectContent.css"
 import renderTasks from "./RenderTasks";
-function renderProjectContent(project,isDefault) {
+function renderProjectContent(project, isDefault) {
     renderTasks(project.getTasksArray());
-    
+
     const mainHeader = document.querySelector(".mainHeader");
     mainHeader.textContent = project.getTitle();
-
+    const btnWrapper = document.querySelector(".addTaskWrapper");
+    btnWrapper.innerHTML = "";
+    
     if (!isDefault) {
         const mainWrapper = document.querySelector(".mainWrapper");
-        const btnWrapper = document.querySelector(".addTaskWrapper");
-        btnWrapper.innerHTML = "";
-
         const addTaskBtn = document.createElement("button");
 
         addTaskBtn.classList.toggle("addTaskBtn");
