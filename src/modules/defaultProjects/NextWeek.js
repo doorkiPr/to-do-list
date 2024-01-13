@@ -3,7 +3,7 @@ import Project from "../Project";
 
 export function nextWeekTasks(arrayOfProjects) {
     const nextWeekTasksArray = [];
-    const nextWeekTasksProject = Project("Next 7 days Tasks");
+    const nextWeekTasksProject = Project("Next weekTasks");
 
     arrayOfProjects.forEach(element => {
         nextWeekTasksArray.push(... (element.getTasksArray().filter( (task) => {
