@@ -1,6 +1,7 @@
 import renderProjectContent from "./RenderProjectContent"
 import { allTasks } from "./defaultProjects/AllTasks"
 import { finishedTasks } from "./defaultProjects/Finished";
+import { nextWeekTasks } from "./defaultProjects/NextWeek";
 import { todayTasks } from "./defaultProjects/Today";
 
 export default function initializeDefaultProjects(array) {
@@ -16,5 +17,9 @@ export default function initializeDefaultProjects(array) {
 
     document.querySelector("#today").addEventListener("click", () => {
         renderProjectContent(todayTasks(array), true)
+    });
+
+    document.querySelector("#nextDays").addEventListener("click", () => {
+        renderProjectContent(nextWeekTasks(array), true)
     });
 }
