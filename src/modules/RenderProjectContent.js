@@ -8,7 +8,7 @@ function renderProjectContent(project, isDefault) {
     mainHeader.textContent = project.getTitle();
     const btnWrapper = document.querySelector(".addTaskWrapper");
     btnWrapper.innerHTML = "";
-    
+
     if (!isDefault) {
         const mainWrapper = document.querySelector(".mainWrapper");
         const addTaskBtn = document.createElement("button");
@@ -49,7 +49,7 @@ function renderProjectContent(project, isDefault) {
         taskTitleInput.placeholder = "Title ..."
         taskTitleInput.type = "text";
         taskTitleInput.required = true;
-        taskTitleInput.maxLength = 15;
+        taskTitleInput.maxLength = 25;
 
         taskDescLabel.htmlFor = "newtaskDesc";
         taskDescInput.name = "newtaskDesc";

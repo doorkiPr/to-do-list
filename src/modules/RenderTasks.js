@@ -66,7 +66,8 @@ function renderTasks(arrayOfTasks) {
         taskTitleInput.placeholder = "Title ..."
         taskTitleInput.type = "text";
         taskTitleInput.required = true;
-        taskTitleInput.maxLength = 15;
+        taskTitleInput.maxLength = 25;
+        taskTitleInput.value = task.getTitle();
 
         taskDescLabel.htmlFor = "newtaskDesc";
         taskDescInput.name = "newtaskDesc";
@@ -75,6 +76,7 @@ function renderTasks(arrayOfTasks) {
         taskDescInput.type = "text";
         taskDescInput.required = true;
         taskDescInput.maxLength = 50;
+        taskDescInput.value = task.getDesc();
 
         taskDateLabel.htmlFor = "newtaskDate";
         taskDateInput.name = "newtaskDate";
