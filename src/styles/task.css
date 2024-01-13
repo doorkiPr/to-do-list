@@ -15,7 +15,7 @@
 
 .task:hover {
     cursor: pointer;
-    background-color: whitesmoke;
+    background-color: var(--bgSideBarMain);
 }
 .task.checked{
     text-decoration: line-through;
