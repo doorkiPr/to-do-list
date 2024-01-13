@@ -105,6 +105,9 @@ body{
     color: var(--darkGreen);
     cursor: pointer;
 }
+button{
+    color: var(--textColor)
+}
 @media screen and (max-width: 1024px) {
     .main{
         flex-direction: column;
